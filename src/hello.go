@@ -16,7 +16,7 @@ func main() {
 	var comando int
 	fmt.Scan(&comando)
 
-	if comando == 1 {
+	/*if comando == 1 {
 		fmt.Println("Iniciando processo de monitoramento. ")
 	} else if comando == 2 {
 		fmt.Println("Iniciando processo de Exibição de logs. ")
@@ -24,5 +24,18 @@ func main() {
 		fmt.Println("Encerrando execução... ")
 	} else {
 		fmt.Println("Entrada não identificada. Fim da execução. ")
+	}*/
+
+	switch comando {
+	case 1:
+		fmt.Println("Iniciando processo de monitoramento. ")
+	case 2:
+		fmt.Println("Iniciando processo de Exibição de logs. ")
+	case 0:
+		fmt.Println("Encerrando execução... ")
+	default:
+		fmt.Println("Entrada não identificada. Fim da execução. ")
+
 	}
+
 }
