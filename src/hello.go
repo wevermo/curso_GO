@@ -3,11 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	nome := "Salazar"
-	idade := 28
-	versao := 1.23
-	fmt.Println("Olá Sr. ", nome, " Sua idade é ", idade)
-	fmt.Println("Você está utilizando o Go na versão ", versao)
+
+	introducao()
 
 	fmt.Println("1-Iniciar monitoramento")
 	fmt.Println("2-Exibir Logs")
@@ -38,4 +35,11 @@ func main() {
 
 	}
 
+}
+func introducao() {
+	nome := "Salazar"
+	idade := 28
+	versao := 1.23
+	fmt.Println("Olá Sr. ", nome, " Sua idade é ", idade)
+	fmt.Println("Você está utilizando o Go na versão ", versao)
 }
